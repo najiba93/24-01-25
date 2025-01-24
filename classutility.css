@@ -1,0 +1,9 @@
+.b-red{
+    border: 1px solid red;
+}
+ 
+.carre{
+    height: 10rem;
+    width: 10rem;
+    background-color: rgb(153, 241, 94);
+}
