@@ -1,9 +1,101 @@
-.b-red{
+.b-red {
     border: 1px solid red;
 }
- 
-.carre{
-    height: 10rem;
-    width: 10rem;
-    background-color: rgb(153, 241, 94);
+
+
+.carre {
+
+
+    background-color: rgb(135, 135, 132);
+}
+
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+
+.box-img {
+    height: 20rem;
+    
+}.red{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgb(83, 136, 137) 0%, rgba(253,187,45,1) 100%);
+}
+h3{
+    background-image: linear-gradient(red,blue);
+    color: transparent;
+    background-clip: text;
+}
+.flex{
+    display: flex;
+}
+.circle{
+    background-color: black;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+.zoom {
+    
+    transition: transform .2s; /* Animation */
+   
+  }
+  
+  .zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  
+.box {
+    width: 60vmin;
+    height: 50vmin;
+    display: grid;
+    place-content: center;
+    color: white;
+    text-shadow: 0 1px 0 #000;
+
+
+    --border-angle: 0turn;  
+    --main-bg: conic-gradient(
+      from var(--border-angle),
+      #213,
+      #112 5%,
+      #112 60%,
+      #213 95%
+    );
+  
+      
+  border: solid 5px transparent;
+  border-radius: 2em;
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #08f, #f03 99%, transparent);
+    
+    background: 
+      
+      var(--main-bg) padding-box,
+      
+      var(--gradient-border) border-box, 
+     
+      var(--main-bg) border-box;
+    
+    background-position: center center;
+  
+    animation: bg-spin 3s linear infinite;
+    
+}
+
+.box:hover {
+    animation-play-state: paused;
+  }
+button::after{
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+    content:"\f061";
+    font-family: "font awesone 6 free";
+    font-weight: 900;
+    margin-left: 3px;
+
 }
